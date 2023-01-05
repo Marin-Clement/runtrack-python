@@ -10,7 +10,7 @@ def my_long_word(n, s):
         else:
             current_word += word
     if current_word:
-        words.append(current_word)
+        words = words + [current_word]
 
     long_words = [word for word in words if check_world_length(word) > n]
     return long_words
